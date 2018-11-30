@@ -5,9 +5,9 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/arnesson/cordova-plugin-firebase"
+    "url": "https://github.com/RecognizeBV/cordova-plugin-firebase"
   },
-  "name": "cordova-plugin-firebase",
+  "name": "cordova-plugin-firebase-with-sentry",
   "version": "2.0.5",
   "description": "Cordova plugin for Google Firebase",
   "cordova": {
