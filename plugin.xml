@@ -10,6 +10,9 @@ xmlns:android="http://schemas.android.com/apk/res/android">
 		<engine name="cordova" version=">=3.2.0" />
 	</engines>
 
+	<dependency id="cordova-plugin-cocoapod-support"/>
+	<preference name="SENTRY_DSN" />
+
 	<platform name="android">
 		<hook type="after_plugin_install" src="scripts/android/after_plugin_install.js" />
 		<hook type="before_plugin_uninstall" src="scripts/android/before_plugin_uninstall.js" />
@@ -75,6 +78,9 @@ xmlns:android="http://schemas.android.com/apk/res/android">
 				<param name="onload" value="true" />
 			</feature>
 		</config-file>
+		<config-file target="*-Info.plist" parent="SentryDsn">
+			<string>$SENTRY_DSN</string>
+		</config-file>
 		<config-file parent="aps-environment" target="*/Entitlements-Debug.plist">
 		    <string>development</string>
 		</config-file>
@@ -109,6 +115,8 @@ xmlns:android="http://schemas.android.com/apk/res/android">
 		<framework custom="true" src="src/ios/Firebase/RemoteConfig/Protobuf.framework" />
 		<framework custom="true" src="src/ios/Firebase/RemoteConfig/FirebaseRemoteConfig.framework" />
 		<framework custom="true" src="src/ios/Firebase/RemoteConfig/FirebaseABTesting.framework" />
+		<pods-config ios-min-version="8.0" use-frameworks="true"/>
+		<pod name="Sentry" spec="4.1.0" />
 	</platform>
 
 	<platform name="browser">
