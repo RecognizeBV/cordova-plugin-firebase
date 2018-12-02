@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="cordova-plugin-firebase" version="3.0.2"
+<plugin id="cordova-plugin-firebase" version="3.0.3"
 xmlns="http://apache.org/cordova/ns/plugins/1.0"
 xmlns:android="http://schemas.android.com/apk/res/android">
 	<name>Google Firebase Plugin</name>
@@ -98,6 +98,12 @@ xmlns:android="http://schemas.android.com/apk/res/android">
 		<pods-config ios-min-version="8.0" use-frameworks="true"/>
 		<pod name="Sentry" spec="4.1.0" />
 		<pod name="Firebase" spec="5.7.0" />
+		<pod name="Firebase/Performance" spec="5.7.0" />
+		<pod name="Firebase/Auth" spec="5.7.0" />
+		<pod name="Firebase/RemoteConfig" spec="5.7.0" />
+		<pod name="Firebase/Messaging" spec="5.7.0" />
+		<pod name="Firebase/Core" spec="5.7.0" />
+		<pod name="GoogleUtilities" spec="5.2.3" />
 		<pod name="Crashlytics" />
 		<pod name="Fabric" />
 	</platform>
