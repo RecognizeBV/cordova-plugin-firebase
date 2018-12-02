@@ -1,6 +1,6 @@
 #import "AppDelegate+FirebasePlugin.h"
 #import "FirebasePlugin.h"
-#import "Firebase.h"
+@import Firebase;
 #import <objc/runtime.h>
 @import Sentry;
 
